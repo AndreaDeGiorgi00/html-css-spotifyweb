@@ -5,10 +5,42 @@
 }
 /*colors*/
 
+.bg-green{
+    background-color: rgb(43, 224, 43);
+}
 
+.bg-blue{
+    background-color:rgb(86, 86, 247);
+}
+
+.bg-red{
+    background-color:rgb(229, 57, 57);
+}
+.bg-grey{
+    background-color:rgb(159, 120, 230);
+}
 /*flex*/
 
+.flex{
+    display: flex;
+}
 
+.flex-column{   
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.align-iteams-space-between{
+    align-items: space-between;
+}
 
 /*commands*/
 
@@ -18,6 +50,24 @@
 .bold{
     font-weight: bold;
 }
+.height-small{
+    min-height:30px ;
+}
+.width-small{
+    min-width: 30px;
+}
+
+.height-medium{
+    min-height: 55px;
+}
+.width-medium{
+    min-width: 55px;
+}
+
+.border{
+   border: 2px dotted black; 
+}
+
 /*txt-height*/
 
 
@@ -38,17 +88,33 @@
 /*header*/
 header{
     min-height: 70px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: red;
+    z-index: 2;
 }
-/*main content*/
+
+.button{
+    width: 200px;
+    height: 30px ;
+
+}
+
 .header-and-main-content{
     position: relative;
+    
 }
-/*side bar*/
+/*main*/
+
+main{
+    padding-top:70px ;
+    
+}
+
+
+/********side bar**********/
 
 .side-bar{
     position: fixed;
@@ -57,7 +123,37 @@ header{
     min-width: 30px;
     height: calc(100vh - 70px);
     background-color: blue;
+    z-index: 3;
 }
+
+.testo-in-small{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+/*playlists*/
+.title-playlist{
+    margin: 5px 0;
+}
+
+.playlist-section{
+    display: none;
+    
+}
+.playlist-esistenti{  
+    overflow: auto;
+    max-height: 150px;
+}
+.playlist-txt{
+    width: 100%;
+}
+/*profilo*/
+.descrizione-profilo{
+    display: none;
+}
+
+
+
 /*footer*/
 footer{
     background-color: black;
@@ -68,16 +164,76 @@ footer{
 
 
 
+/***********************************************/
+/**************META SECTION*********************/
+/***********************************************/
+
+
+/*size s*/
+
+@media screen and (min-width:768px) {
+   
+    /********SIDEBAR*********/
+   
+    .side-bar{
+        width: 200px;
+    }
+    
+    .testo-in-small{
+        display: inline-block;
+    }
+    .upper-section{
+        padding-left:200px ;
+    }
+
+    /*selezione schede*/
+    .logo{
+        height: 70px;
+    }
+    
+    .icona-logo{
+        display: none;
+    }
+    .contenitore-selezione-schede{
+        margin: 5px 0;
+    }
+
+    /*playlists*/
+
+    .playlist-section{
+        display: block;
+        
+    }
 
 
 
+    /*profilo*/
+    .descrizione-profilo{
+        display: block;
+    }
+    .icona-profilo-e-scritta{
+        display: flex;
+    }
+
+}
+
+
+/*size m*/
+
+
+@media screen and (min-width:992px) {
+    
+   
+}
 
 
 
+/*size l*/
 
+@media screen and (min-width:1200px) {
+    
 
-
-
+}
 
 
 
