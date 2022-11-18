@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
+/*colors*/
+
+
+/*flex*/
+
+
+
+/*commands*/
+
+.circle{
+    border-radius: 50%;
+}
+.bold{
+    font-weight: bold;
+}
+/*txt-height*/
+
+
+
+
+/*layout*/
+
+.upper-section{
+    height: calc(100vh - 70px);
+    padding-left:30px;
+    background-color: yellow;
+    width: 100%;
+    overflow-y: scroll;
+    
+    
+}
+
+/*header*/
+header{
+    min-height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: red;
+}
+/*main content*/
+.header-and-main-content{
+    position: relative;
+}
+/*side bar*/
+
+.side-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 30px;
+    height: calc(100vh - 70px);
+    background-color: blue;
+}
+/*footer*/
+footer{
+    background-color: black;
+    height: 70px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
