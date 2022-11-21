@@ -3,6 +3,10 @@
     padding: 0;
     margin:0
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /*colors*/
 
 .bg-green{
@@ -25,6 +29,11 @@
     display: flex;
 }
 
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
 .flex-column{   
     display: flex;
     flex-direction: column;
@@ -37,7 +46,9 @@
 .justify-content-end{
     justify-content: flex-end;
 }
-
+.justify-content-center{
+    justify-content: center;
+}
 .align-iteams-space-between{
     align-items: space-between;
 }
@@ -45,6 +56,10 @@
 .align-iteams-center{
     align-items: center;
 }
+.align-content-center{
+    align-content: center;
+}
+
 
 /*commands*/
 
@@ -81,7 +96,7 @@
 
 .upper-section{
     height: calc(100vh - 70px);
-    padding-left:30px;
+    padding-left:34px;
     background-color: yellow;
     width: 100%;
     overflow-y: scroll;
@@ -89,7 +104,7 @@
     
 }
 
-/*header*/
+/*******header********/
 header{
     min-height: 70px;
     position: fixed;
@@ -114,13 +129,101 @@ header{
    
     
 }
-/*main*/
+/*********main*************/
 
 main{
     padding-top:70px ;
     
 }
 
+
+main nav{
+    
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+ul{
+    list-style-type: none;
+    
+}
+
+
+
+
+nav ul li{
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0 30px;
+    text-align: center;
+    height: 40px;
+}
+
+
+h2{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+.title-description{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    background-color: darkslateblue;
+    
+}
+
+/*songs section*/
+
+.card-and-txt{
+    background-color: darksalmon;
+}
+.column{
+    width: calc(100%/2);
+    padding: 5px;
+    height: 300px;
+}
+
+
+.card-img{
+    width: 100px;
+    height: 100px;
+}
+.title-song{
+    margin: 10px 0;
+    background-color: red;
+    height: 40px;
+    width: 100%;
+}
+.subtitle{
+    height: 30px;
+    width: 100%;
+    background-color: brown;
+}
+
+.conteiner-songs{
+    margin: 30px 0;
+}
+/*suggestion-section*/
+
+.conteiner-suggeriti {
+    margin: 30px 0;
+}
+/*artisti section*/
+.conteiner-artisti{
+    margin-top: 30px;
+}
+
+
+.card-img-artista{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    background-color: fuchsia;
+    align-self: center;
+}
 
 /********side bar**********/
 
@@ -162,7 +265,7 @@ main{
 
 
 
-/*footer*/
+/*********footer*********/
 footer{
     background-color: black;
     height: 70px;
@@ -223,6 +326,15 @@ footer{
         display: flex;
     }
 
+    /*******MAIN******/
+
+    
+    nav{
+        width: 80%;
+        margin:0 auto;
+    }
+
+
 }
 
 
@@ -230,7 +342,10 @@ footer{
 
 
 @media screen and (min-width:992px) {
-    
+    nav{
+        width: 90%;
+        margin:0 auto;
+    }
    
 }
 
