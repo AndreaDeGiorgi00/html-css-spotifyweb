@@ -272,8 +272,58 @@ footer{
 
 }
 
+.brano-in-riproduzione{
+    width: 30%;
+    background-color:rgb(82, 212, 53)
+}
 
+.icona{
+    background-color: green;
+}
+/****************************************/
+.comandi-brano{
+    background-color:rgb(95, 44, 44);
+    width: 40%;
+    height: 100%;
+    gap: 10px;
+}
 
+.pulsanti{
+    width: 100%;
+
+}
+
+.icons{
+    width:30px ;
+    height: 30px;
+    background-color: green;
+}
+
+.barra-progressione{
+    width: 90%;
+    border-radius: 30px;
+    height: 10px;
+    background-color: grey;
+}
+
+/****************************************/
+.volume{
+    background-color: aqua;
+    width: 30%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.barra-volume{
+    height:10px ;
+    border-radius: 30px;
+    width: 100%;
+    background-color: grey;
+    margin: 10px 0;
+}
+.icone-and-barra-progressione{
+    width: 100%;
+}
 
 /***********************************************/
 /**************META SECTION*********************/
@@ -347,6 +397,16 @@ footer{
         margin:0 auto;
     }
    
+    /******MAIN******/
+
+    .column{
+        width: calc(100%/4);
+    }
+    /*******FOOTER*****/
+
+    .volume{
+        padding-left: 40px;
+    }
 }
 
 
@@ -354,7 +414,12 @@ footer{
 /*size l*/
 
 @media screen and (min-width:1200px) {
-    
+    /******MAIN******/
+
+    .column{
+        width: calc(100%/6);
+    }
+
 
 }
 
