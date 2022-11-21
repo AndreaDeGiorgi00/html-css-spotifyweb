@@ -111,15 +111,19 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background: red;
+    background:#080B12;
     z-index: 2;
 }
 
-.button{
+.bottone{
     width: 200px;
     height: 30px ;
-    background-color: coral;
+    color: white;
     margin-right: 30px;
+    border:1px solid white;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color:#080B12 ;
     
 
 }
