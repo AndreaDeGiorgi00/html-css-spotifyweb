@@ -42,6 +42,10 @@
     align-items: space-between;
 }
 
+.align-iteams-center{
+    align-items: center;
+}
+
 /*commands*/
 
 .circle{
@@ -54,7 +58,7 @@
     min-height:30px ;
 }
 .width-small{
-    min-width: 30px;
+    min-width: 30px; 
 }
 
 .height-medium{
@@ -99,11 +103,15 @@ header{
 .button{
     width: 200px;
     height: 30px ;
+    background-color: coral;
+    margin-right: 30px;
+    
 
 }
 
 .header-and-main-content{
     position: relative;
+   
     
 }
 /*main*/
