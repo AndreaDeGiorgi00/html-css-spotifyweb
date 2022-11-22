@@ -115,7 +115,7 @@ body{
 .upper-section{
     height: calc(100vh - 70px);
     padding-left:34px;
-    background-color: yellow;
+    background-color:#141922;
     width: 100%;
     overflow-y: scroll;
     
@@ -185,47 +185,65 @@ h2{
     display: block;
     height: 40px;
     width: 100%;
-    background-color: darkolivegreen;
+   padding-left :10px ;
 }
 .title-description{
     display: block;
     width: 100%;
     height: 30px;
     margin-top: 5px;
-    background-color: darkslateblue;
+    padding-left: 10px;
     
 }
 
 /*songs section*/
 
-.card-and-txt{
-    background-color: darksalmon;
-}
+
 .column{
     width: calc(100%/2);
-    padding: 5px;
-    height: 300px;
+    padding: 10px;
+    max-width: 280px;
 }
 
 
 .card-img{
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 100%;
+    
+}
+/*.card-img img::after{
+    transform: scale(1.3) ;
+    content: '\f144';
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #8080805f;
+    
+}*/
+.card-txt{
+    text-align: center;
 }
 .title-song{
     margin: 10px 0;
-    background-color: red;
-    height: 40px;
+    
     width: 100%;
 }
 .subtitle{
-    height: 30px;
+    
     width: 100%;
-    background-color: brown;
+   
 }
 
 .conteiner-songs{
     margin: 30px 0;
+}
+
+.card-img img{
+    max-width: 100%;
+    position: relative;
 }
 /*suggestion-section*/
 
@@ -241,12 +259,13 @@ h2{
 .card-img-artista{
     border-radius: 50%;
     overflow: hidden;
-    height: 100px;
-    width: 100px;
-    background-color: fuchsia;
+    
+    
     align-self: center;
 }
-
+.card-img-artista img{
+    max-width: 100%;
+}
 /********side bar**********/
 
 .side-bar{
@@ -370,6 +389,19 @@ footer{
     width: 100%;
 }
 
+/*effetti hover*/
+
+ nav ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 /***********************************************/
 /**************META SECTION*********************/
 /***********************************************/
@@ -444,7 +476,7 @@ footer{
 
     .descrizione-profilo:hover{
         color: white;
-        }
+    }
         
     .icona-profilo-e-scritta{
         display: flex;
