@@ -13,6 +13,9 @@ body{
     background-color: rgb(43, 224, 43);
 }
 
+.bg-white{
+    background-color: white;
+}
 .bg-blue{
     background-color:rgb(86, 86, 247);
 }
@@ -331,18 +334,20 @@ h2{
 
 /*********footer*********/
 footer{
-    background-color: black;
+    background-color: #282828;
     height: 70px;
 
 }
 
 .brano-in-riproduzione{
     width: 30%;
-    background-color:rgb(82, 212, 53)
+    
 }
 
 .icona{
-    background-color: green;
+    background-color: #282828;
+    font-size: 20px;
+    
 }
 
 .immagine-brano img{
@@ -358,9 +363,13 @@ footer{
     font-size: 13px;
 }
 
+.nome-brano{
+    padding-left: 5px;
+}
+
 /****************************************/
 .comandi-brano{
-    background-color:rgb(95, 44, 44);
+    
     width: 40%;
     height: 100%;
     gap: 10px;
@@ -377,20 +386,37 @@ footer{
 .icons{
     width:30px ;
     height: 30px;
-    background-color: green;
+    font-size: 30px;
 }
+
 
 .barra-progressione{
     width: 90%;
     border-radius: 30px;
     height: 10px;
     background-color: grey;
+    margin: 5px;
+    position: relative;
+}
+.progres-bar{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    border-radius: 30px;
 }
 
+.pointer{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: -4px;
+    right: -7px;
+    border-radius: 50%;
+}
 /****************************************/
 .volume{
-    background-color: aqua;
-    width: 30%;
+    
+    width: 40%;
     height: 100%;
     padding-left: 5%;
 }
@@ -401,19 +427,35 @@ footer{
     width: 100%;
     background-color: grey;
     margin: 10px 0;
+    position: relative;
 }
 .icone-and-barra-progressione{
     width: 100%;
 }
+.icons-closing{
+    width:30px ;
+    height: 30px;
+    font-size:20px;
+    margin: 0 5px;
+}
 
+.volume-value{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    border-radius: 30px;
+}
 /*effetti hover*/
 
- nav ul li:hover{
+ nav ul li:hover {
     color: white;
     cursor: pointer;
 }
 
-
+.bottone:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
 
 
 
@@ -525,7 +567,10 @@ footer{
     .comandi-brano{
         width: 50%;
     }
-
+    .icona{
+       
+        margin-left: 30px;
+    }
 }
 
 
